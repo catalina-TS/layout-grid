@@ -1,0 +1,33 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    'header header'
+    'aside main'
+    'footer footer';
+}
+
+header{
+    grid-area: header;
+    background-color:#C3B1E1 ;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #B6E0FE;
+}
+
+main{
+    grid-area: main;
+    background-color: #f3e1b7;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #C3B1E1;1
+}
