@@ -20,12 +20,48 @@ header{
 aside{
     grid-area: aside;
     background-color: #B6E0FE;
+    
 }
+
+/*Sección de productos*/
 
 main{
     grid-area: main;
     background-color: #f3e1b7;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
 }
+
+main img{
+    width: 300px;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.producto{
+    background-color: azure;
+    border-radius: 5px;
+    border: 1px black solid;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.producto button{
+    border: 1px black solid;
+    background-color: #C3B1E1;
+    padding: 10px;
+    width: 90%;
+
+}
+
+
+
+
 
 footer{
     grid-area: footer;
