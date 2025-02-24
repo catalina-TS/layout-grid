@@ -1,48 +1,78 @@
-*{
+* {
     font-family: sans-serif;
     margin: 0;
+    padding: 0;
 }
 
-body{
+body {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas:
-    'header header'
-    'aside main'
-    'footer footer';
+        'header header'
+        'aside main'
+        'footer footer';
 }
 
-header{
+header {
     grid-area: header;
-    background-color:#C3B1E1 ;
+    background-color: rgb(24, 22, 22);
+    color: #FFF7F0;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-aside{
+aside {
     grid-area: aside;
-    background-color: #B6E0FE;
+    display: flex;
+    background-color: #C3B1E1;
+    border-right: 1px rgba(27, 25, 25, 0.904) solid;
+    flex-direction: column;
+    align-items: start;
     
 }
 
-/*Sección de productos*/
 
-main{
+aside menu {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+    color: #1d1c1c
+}
+
+menu li:hover{
+    color: #fff; 
+    cursor: pointer;
+}
+
+
+main {
     grid-area: main;
-    background-color: #f3e1b7;
+    background-color: #FFF7F0;
     display: grid;
     grid-template-columns: auto auto auto;
-    
 }
 
-main img{
-    width: 300px;
+
+
+
+main img {
+    width: 250px;
     padding: 10px;
     border-radius: 10%;
 }
 
-.producto{
+
+.producto {
     background-color: azure;
     border-radius: 5px;
     border: 1px black solid;
+    box-shadow: 1px 1px black;
     margin: 10px;
     padding: 10px;
     display: flex;
@@ -51,19 +81,33 @@ main img{
     gap: 10px;
 }
 
-.producto button{
-    border: 1px black solid;
+.precio p{
+    font-weight: bold ;
+    text-align: end;
+    
+}
+
+button {
+    border: none;
     background-color: #C3B1E1;
     padding: 10px;
     width: 90%;
 
 }
 
+button:hover{
+    background-color: #a592c4;
+    cursor: pointer;
+}
 
 
-
-
-footer{
+footer {
     grid-area: footer;
-    background-color: #C3B1E1;1
+    height: 50px;
+    background-color: rgb(24, 22, 22);
+    color: #FFF7F0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
 }
