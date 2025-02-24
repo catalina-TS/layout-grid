@@ -49,7 +49,9 @@ aside menu {
     flex-direction: column;
     list-style: none;
     gap: 10px;
-    color: #1d1c1c
+    color: #1d1c1c;
+    font-size: large;
+
 }
 
 menu li:hover{
